@@ -1,0 +1,68 @@
+part 1
+Chukapis-MBP:death-star chu$ cd ..
+Chukapis-MBP:galaxy-far-far-away chu$ ls
+commands.txt    death-star
+
+Chukapis-MBP:Chukapis-MBP:galaxy-far-far-away chu$ cd tatooine
+Chukapis-MBP:tatooine chu$ touch luke.txt ben_kenobi.txt
+
+Chukapis-MBP:tatooine chu$ mkdir millenium_falcon && touch millenium_falcon/han_solo.txt millenium_falcon/chewbaca.txt
+
+part 2 -rename
+Chukapis-MBP:tatooine chu$ mv ben_kenobi.txt obi_wan.txt
+
+part 2- copy 
+Chukapis-MBP:galaxy-far-far-away chu$ cp death-star/storm_trooper.txt tatooine
+
+part iiv: move
+Chukapis-MBP:galaxy-far-far-away chu$ cd tatooine
+Chukapis-MBP:tatooine chu$ mv luke.txt millenium_falcon
+Chukapis-MBP:tatooine chu$ mv obi_wan.txt millenium_falcon
+Chukapis-MBP:tatooine chu$ mv millenium_falcon ..
+Chukapis-MBP:tatooine chu$ cd ..
+Chukapis-MBP:galaxy-far-far-away chu$ mv millenium_falcon death-star
+Chukapis-MBP:galaxy-far-far-away chu$ cd death-star
+Chukapis-MBP:death-star chu$ ls
+darth_vader.txt         princess_leia.txt
+millenium_falcon        storm_trooper.txt
+Chukapis-MBP:death-star chu$ mv princess_leia.txt millenium_falcon
+
+part V: rm/ remove
+Chukapis-MBP:millenium_falcon chu$ rm obi_wan.txt
+
+part VI
+Chukapis-MBP:galaxy-far-far-away chu$ mkdir yavin_4
+Chukapis-MBP:death-star chu$ mv millenium_falcon ../yavin_4
+Chukapis-MBP:death-star chu$ cd ..
+Chukapis-MBP:galaxy-far-far-away chu$ cd yavin_4
+Chukapis-MBP:yavin_4 chu$ mkdir x_wing
+Chukapis-MBP:yavin_4 chu$ cd millenmium_falcon
+Chukapis-MBP:millenium_falcon chu$ mv princess_leia.txt ..
+Chukapis-MBP:millenium_falcon chu$ ls
+chewbaca.txt    han_solo.txt    luke.txt
+Chukapis-MBP:millenium_falcon chu$ mv luke.txt ..
+Chukapis-MBP:millenium_falcon chu$ cd ..
+Chukapis-MBP:yavin_4 chu$ mv luke.txt x_wing
+Chukapis-MBP:yavin_4 chu$ mv millenium_falcon ..
+Chukapis-MBP:yavin_4 chu$ mv x_wing ..
+bash: cd: death-star: No such file or directory
+Chukapis-MBP:yavin_4 chu$ cd ..
+Chukapis-MBP:galaxy-far-far-away chu$ cd death-star
+Chukapis-MBP:death-star chu$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Chukapis-MBP:death-star chu$ mv darth_vador.txt tie_fighter_1
+Chukapis-MBP:death-star chu$ cp storm_trooper.txt tie_fighter_2
+Chukapis-MBP:death-star chu$ cp storm_trooper.txt tie_fighter_3
+Chukapis-MBP:death-star chu$ mv tie_fighter_1 ..
+Chukapis-MBP:death-star chu$ mv tie_fighter_2 ..
+Chukapis-MBP:death-star chu$ mv tie_fighter_3 ..
+
+part VII
+Chukapis-MBP:death-star chu$ cd ..
+Chukapis-MBP:galaxy-far-far-away chu$ cd x_wing
+Chukapis-MBP:x_wing chu$ touch the_force.txt
+Chukapis-MBP:x_wing chu$ cd ..
+Chukapis-MBP:galaxy-far-far-away chu$ rm -r death-star
+Chukapis-MBP:galaxy-far-far-away chu$ mv x_wing yavin_4
+Chukapis-MBP:galaxy-far-far-away chu$ mv millenium_falcon yavin_4
+
+
